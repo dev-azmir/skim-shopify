@@ -1,12 +1,17 @@
-body {
-    background-color: rgb(251, 251, 232);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.homepage {
-    text-align: center;
-    padding-top: 10em;
+:root {
+  --white: #fff;
+  --black: #222;
+  --container: 1440px;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.logo {
-    width: 25%;
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 15px;
 }

@@ -1,0 +1,22 @@
+#announcement {
+  background-color: var(--black);
+  text-align: center;
+  color: var(--white);
+  padding: 10px 0;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+#header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black);
+  padding: 20px 0;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}

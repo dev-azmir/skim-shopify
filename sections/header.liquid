@@ -1,0 +1,16 @@
+<header id="header" class="site-header">
+  <div class="container">
+    <div class="site-header__wrapper">
+        <div class="site-header__logo">
+            <a href="{{ shop.url }}">
+                {{- 'logo.svg' | inline_asset_content -}}
+            </a>
+        </div>
+        <div class="site-header__navigation">
+            {% for link in linklists.link %}
+                <a href="{{ link.url }}" class="site-header__link">{{ link.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+  </div>
+</header>

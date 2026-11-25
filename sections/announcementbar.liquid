@@ -1,0 +1,30 @@
+{% if section.settings.announcement_visibility %}
+    <section id="announcement" class="announcement-bar">
+        <div class="container">
+            <p>{{ section.settings.announcement_text }}</p>
+        </div>
+    </section>
+{% endif %}
+
+
+{% schema %}
+{
+    "name": "announcement",
+    "settings": [
+            {
+                "id": "announcement_text",
+                "type": "text",
+                "label": "Announcement Text",
+                "default": "International Shopping Available",
+                "info": "This text will be displayed in the announcement bar."
+            },
+            {
+                "id": "announcement_visibility",
+                "type": "checkbox",
+                "label": "Announcement Visibility",
+                "default": true,
+                "info": "Check this box to display the announcement bar on your website."
+            }
+        ]
+}
+{% endschema %}
